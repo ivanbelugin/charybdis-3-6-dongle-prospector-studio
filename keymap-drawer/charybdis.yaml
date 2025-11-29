@@ -12,7 +12,7 @@ layers:
   - I
   - O
   - P
-  - {t: ▽, type: trans}
+  - A
   - TAB
   - {t: A, h: LGUI}
   - {t: S, h: LALT}
@@ -24,7 +24,7 @@ layers:
   - {t: K, h: RSHFT}
   - {t: L, h: RALT}
   - {t: ;, h: LGUI}
-  - {t: ▽, type: trans}
+  - B
   - LSHFT
   - Z
   - {t: X, h: Ctl+ X}
@@ -36,7 +36,7 @@ layers:
   - ','
   - .
   - /
-  - {t: ▽, type: trans}
+  - C
   - LCTRL
   - Symbol
   - {t: RET, h: LGUI}
