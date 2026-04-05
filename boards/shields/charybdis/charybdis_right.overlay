@@ -2,7 +2,7 @@
 #include <behaviors/input_gestures_accel.dtsi>
 
 // Конфигурация ускорения для трекбола
-&pointer_accel {
+pointer_accel: pointer_accel {
     input-type = <INPUT_EV_REL>;
     min-factor = <800>;          // 0.8x на медленных движениях
     max-factor = <3000>;         // 3.0x на быстрых
