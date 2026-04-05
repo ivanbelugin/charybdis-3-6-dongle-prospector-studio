@@ -1,6 +1,19 @@
+#include <input/processors.dtsi>
+#include <behaviors/input_gestures_accel.dtsi>
 #include "charybdis.dtsi"
 #include "charybdis_3610.dtsi"
 #include "split_input_common.dtsi"
+
+// Конфигурация ускорения для трекбола
+&pointer_accel {
+    input-type = <INPUT_EV_REL>;
+    min-factor = <800>;          // 0.8x на медленных движениях
+    max-factor = <3000>;         // 3.0x на быстрых
+    speed-threshold = <1200>;    // Порог начала ускорения
+    speed-max = <6000>;          // Максимальная скорость
+    acceleration-exponent = <2>; // Квадратичная кривая
+    track-remainders;            // Отслеживать дробные перемещения
+};
 
 &default_transform {
 	col-offset = <6>;
